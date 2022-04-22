@@ -1,21 +1,19 @@
 // Starting array
-let array = [-4, 43, -12, 30, 4, 0, 12]
+let array = [2, 43, -12, 30, 4, 0, 13]
 
 // Write your solution below:
 
 
-function addNumbers(arr) {
-    
-
-    for (let i = 0; i < arr.length; i++) {
-        let comp = arr[i+1]
-        if (arr[i] + comp === 0) {
-            return true
-        } else {
-            console.log(arr[i] + comp)
-            
-        }
+function addNumbers(arr) {  
+   for (let j = 0; j <= arr.length; j++) {
+    for (let i = 0; i <= arr.length; i++) {
+            if (j !== i) {
+                if (arr[j] + arr[i] === 0) {
+                    return true
+            }
+        } 
     }
+   } 
     return false
 }
 
